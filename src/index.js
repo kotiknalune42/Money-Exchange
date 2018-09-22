@@ -1,9 +1,10 @@
 // PLEASE DON'T change function name
 module.exports = function makeExchange(currency) {
- if (currency === 0){
+ if (currency === 0 || currency < 0){
  			return [];
  } else if (currency >= 10000) {
-   		console.log(Error("You are rich, my friend! We don't have so much coins for exchange")); 
+     var rich = {error:"You are rich, my friend! We don't have so much coins for exchange"};
+   		return rich; 
  } else {
     	var coins = [{H:50},{Q:25},{D:10},{N:5},{P:1}]
      
