@@ -26,7 +26,7 @@ module.exports = function makeExchange(currency) {
       var p = (Math.floor( ans4 / coins[4].P))
       var ans5 = ans4 - (n * coins[4].P);
  			coins[4].P = p; // new value Pennies
-      }
+    
       
 //TESTING
     
@@ -38,6 +38,6 @@ if(d == 0){delete exchange.D;}
 if(n == 0){delete exchange.N;}
 if(p == 0){delete exchange.P;}
 
-return exchange;  // Returns coins needed to make change
+return exchange;   } // Returns coins needed to make change
 }
 
